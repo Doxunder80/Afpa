@@ -79,19 +79,19 @@
 
             <div class="mb-3">
                <label for="nom">Nom*</label>
-               <input type="nom" class="form-control" placeholder="Veuillez saisir votre nom">
+               <input class="form-control" id="nom" placeholder="Veuillez saisir votre nom">
             </div>
 
             <div class="mb-3">
-               <label for="nom">Prénon*</label>
-               <input type="email" class="form-control" placeholder="Veuillez saisir votre prénon">
+               <label for="prenom">Prénon*</label>
+               <input class="form-control" id="prenom" placeholder="Veuillez saisir votre prénon">
             </div>
 
             <div class="mb-3">
-               <label for="nom">Sexe*</label>
+               <label for="sexe">Sexe*</label>
             </div>
             <div class="form-check form-check-inline">
-               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+               <input class="form-check-input" id="sexe" type="radio" name="inlineRadioOptions" value="option1">
                <label class="form-check-label" for="sexe">Féminin</label>
             </div>
 
@@ -105,7 +105,7 @@
             </div>
 
             <div class="mb-2 mt-3">
-               <label for="nom">Date de Naissance*</label>
+               <label for="date">Date de Naissance*</label>
             </div>
             <div class="input-group mb-3">
                <input type="date" name="ddn" id="date" class="form-control">
@@ -119,29 +119,29 @@
             </div>
 
             <div class="mb-3">
-               <label for="nom">Code Postal*</label>
-               <input type="email" class="form-control">
+               <label for="postal">Code Postal*</label>
+               <input type="email" id="postal" class="form-control">
             </div>
 
             <div class="mb-3">
-               <label for="nom">Adresse*</label>
-               <input type="email" class="form-control">
+               <label for="adresse">Adresse*</label>
+               <input type="email" id="adresse" class="form-control">
             </div>
 
             <div class="mb-3">
-               <label for="nom">Ville*</label>
-               <input type="nom" class="form-control">
+               <label for="ville">Ville*</label>
+               <input class="form-control" id="ville">
             </div>
 
             <div class="mb-3">
-               <label for="nom">Email*</label>
-               <input type="email" class="form-control" placeholder="dave.loper@afpa.fr">
+               <label for="email">Email*</label>
+               <input type="email" class="form-control" id="email" placeholder="dave.loper@afpa.fr">
             </div>
 
             <h1>Votre demande</h1>
 
-            <label for="quastion" class="form-label"> Sujet*</label>
-            <select class="form-select mb-3" aria-label="Default select example">
+            <label for="sujet"> Sujet*</label>
+            <select class="form-select mb-3" id="sujet" aria-label="Default select example">
                <option selected disabled>Veuillez séléctionner un sujet</option>
                <option value="commandes">Mes commandes</option>
                <option value="questionproduit">Question sur le produit</option>
@@ -150,8 +150,8 @@
             </select>
 
             <div class="mb-3">
-               <label for="quastion" class="form-label"> Votre question* :</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+               <label for="quastion"> Votre question* :</label>
+               <textarea class="form-control" id="quastion" rows="2"></textarea>
             </div>
 
             <div class="mb-3 form-check">
@@ -174,7 +174,7 @@
             <li class="list-inline-item">plan du site</li>
          </ul>
       </div>
-
+   </div>
 </body>
 
 </html>
