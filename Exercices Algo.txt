@@ -1,0 +1,520 @@
+EXERCICES
+
+--------------------
+Ex 1.1
+--------------------
+Variables A, B en Entier
+Début
+A ← 1
+B ← A + 3
+A ← 3
+Fin
+
+A=3
+B=4
+
+--------------------
+Ex 1.2
+--------------------
+
+Variables A, B, C en Entier
+Début
+A ← 5
+B ← 3
+C ← A + B
+A ← 2
+C ← B – A
+Fin
+
+A=2
+B=3
+C=1
+
+
+--------------------
+Ex 1.3
+--------------------
+
+Variables A, B en Entier
+Début
+A ← 5
+B ← A + 4
+A ← A + 1
+B ← A – 4
+Fin
+
+A = 6
+B = 2
+
+
+--------------------
+Ex 1.4
+--------------------
+
+Variables A, B, C en Entier
+Début
+A ← 3
+B ← 10
+C ← A + B
+B ← A + B
+A ← C
+Fin
+
+
+A = 13
+B = 13
+C = 13
+
+
+--------------------
+Ex 1.5
+--------------------
+
+Variables A, B en Entier
+Début
+A ← 5
+B ← 2
+A ← B
+B ← A
+Fin
+
+A = 2
+B = 2
+
+
+Les deux dernières instructions ne permettent pas d’échanger les deux valeurs de B et A parce que l'une d'elles a disparu. 
+Si l’on inverse les deux dernières instructions cele ne change rien.
+
+
+--------------------
+Ex 1.6
+--------------------
+
+Début
+A ← B
+B ← A
+Fin
+
+
+--------------------
+Ex 1.7
+--------------------
+
+
+
+
+--------------------
+Ex 1.8
+--------------------
+
+Le logiciel va faire une addition et écrire 435.
+
+
+--------------------
+Ex 1.9
+--------------------
+ 
+Le logiciel va les concaténer et écrire 42312.
+
+
+______________________________________________________________________________________
+
+
+
+--------------------
+Ex 2.1
+--------------------
+
+Le programme va écrire 231 et aprés va écrire 462.
+
+
+--------------------
+Ex 2.2
+--------------------
+Variables A, B en Entier
+
+DEBUT
+
+	ECRIRE ('Veuillez écrire un nombre entier')
+	LIRE A
+
+	B ← A^2
+
+	ECRIRE ('Le carré de A est égal a B')
+
+FIN
+
+
+--------------------
+Ex 2.3
+--------------------
+Variables HT, TVA
+
+DEBUT
+
+	ECRIRE ('Prix HT d'un article')
+	LIRE (HT)
+
+	ECRIRE ('Nombre d'articles')
+	LIRE (nombreArticles)
+
+	ECRIRE ('Taux de TVA')
+	LIRE (TVA)
+
+	TTC ← HT + (HT * TVA / 100)
+
+	ECRIRE ('Le prix total est TTC')
+
+FIN
+
+--------------------
+Ex 2.4
+--------------------
+Variables A, B, C, D
+
+DEBUT
+
+	A ← belle marquise
+	B ← vous beaux eux
+	C ← me font morrir
+	D ← d'amour
+
+	LIRE (A&B&C&D)
+	LIRE (B&C&D&A)
+	LIRE (C&D&A&B)
+	LIRE (D&A&B&C)
+
+FIN
+
+
+______________________________________________________________________________________
+
+
+
+--------------------
+Ex 3.1
+--------------------
+Variable N en Entier
+
+DEBUT
+	
+	ECRIRE ('Veuillez écrire un nombre entier')
+	LIRE (N)
+
+	SI (N = positf) ALORS
+		ECRIRE ('N est un nombre positif')
+	SINON
+		ECRIRE ('N est un nombre négatif')
+	FINSI
+
+FIN
+
+
+--------------------
+Ex 3.2
+--------------------
+Variables N1, N2 en Entier
+
+DEBUT
+
+	ECRIRE ('Veuillez écrire un nombre entier')
+	LIRE (N1)
+	ECRIRE ('Veuillez écrire un autre nombre entier')
+	LIRE (N2)
+	
+	SI (N1*N2<0) ALORS
+		ECRIRE ('Le produit de ces deux nombres est négatif')
+	SINON
+		ECRIRE ('Le produit de ces deux nombres est positif')
+	FINSI
+
+FIN
+
+
+--------------------
+Ex 3.3
+--------------------
+Variable Ns
+
+DEBUT
+	
+	ECRIRE ('Veuillez écrire trois noms')
+	LIRE (Ns)
+
+	SI (Ns rangés dans l'ordre alphabétique) ALORS
+		ECRIRE ('Les noms sont rangé dans l'ordre alfabetique')
+	SINON
+		ECRIRE ('Les noms ne sont pas rangés dans l'ordre alfabetique')
+	FINSI
+
+FIN
+
+
+--------------------
+Ex 3.4
+--------------------
+Variables N en Entier
+
+DEBUT
+	
+	ECRIRE ('Veuillez écrire un nombre entier')
+	LIRE (N)
+
+	SI (N>0) ALORS
+		ECRIRE ('N est un nombre positif')
+	SINON
+		SI (N=0) ALORS
+			ECRIRE ('N est égal a 0')
+		SINON
+			ECRIRE ('N est un nombre négatif')
+		FINSI
+	FINSI
+
+FIN
+
+
+--------------------
+Ex 3.5
+--------------------
+Variables N1, N2 en Entier
+
+DEBUT
+
+	ECRIRE ('Veuillez écrire un nombre entier')
+	LIRE (N1)
+	ECRIRE ('Veuillez écrire un autre nombre entier')
+	LIRE (N2)
+	
+	SI (N1*N2<0) ALORS
+		ECRIRE ('Le produit de ces deux nombres est négatif')
+	SINON
+		SI (N=0)
+			ECRIRE ('Le produit de ces deux nombres est égal a 0')
+		SINON
+			ECRIRE ('Le produit de ces deux nombres est positif')
+	FINSI
+
+FIN
+
+
+
+--------------------
+Ex 3.6
+--------------------
+Variable A en Entier
+
+DEBUT
+	ECRIRE ('Veuillez écrire votre âge')
+	LIRE (A)
+
+	SI (A>=6) ET (A=<7) ALORS
+		ECRIRE (Tu es un Poussin!)
+	FINSI
+
+	SI (A>=8) ET (A=<9) ALORS
+		ECRIRE (Tu es une Pupille!)
+	FINSI
+	
+	SI (A>=10) ET (A=<11) ALORS
+		ECRIRE (Tu es une Minime!)
+	FINSI	
+
+	SI (A>=12) ALORS
+		ECRIRE (Tu es un Cadet!)
+	FINSI
+FIN
+
+
+Oui, on peut concevoir plusieurs algorithmes équivalents menant à ce résultat.
+
+
+______________________________________________________________________________________
+
+
+--------------------
+Ex 4.1
+--------------------
+Variables Tutu, Toto, Tata
+
+DEBUT
+	SI Tutu < Toto + 4 OU Tata <> "OK" ALORS
+		Tutu ← Tutu - 1
+	SINON
+		Tutu ← Tutu + 1
+	FINSI
+FIN
+
+
+
+--------------------
+Ex 4.2
+--------------------
+Variables H, M en Entier
+
+DÉBUT
+ÉCRIRE "Veuillez indiquer les heures"
+LIRE H
+ÉCRIRE "Veuillez indiquer les minutes"
+LIRE M                            
+
+M1=M+1
+H1=H+1
+
+SI (H=23 et M=59) ALORS
+    ÉCRIRE  "Dans une minute, il sera 00 heure(s) 00 minute(s)" 
+SINON 
+      SI (M=59) ALORS
+       ÉCRIRE  "Dans une minute, il sera" ,H1, "heure(s) 00 minute(s)" 
+      SINON
+       ÉCRIRE  "Dans une minute, il sera" ,H, "heure(s)" ,M1, "minute(s)"
+      FINSI   
+FINSI
+
+FIN   
+
+
+--------------------
+Ex 4.3
+--------------------
+Variables H, M, S en Entier
+
+DÉBUT
+ÉCRIRE "Veuillez indiquer les heures"
+LIRE H
+ÉCRIRE "Veuillez indiquer les minutes"
+LIRE M
+ÉCRIRE "Veuillez indiquer les secondes"
+LIRE S                               
+
+M1=M+1
+H1=H+1
+S1=S+1
+
+
+SI (H=23 et M=59 et S=59) ALORS
+    ÉCRIRE "Dans une seconde, il sera 00 heure(s) 00 minute(s) et 00 seconde(s)"  
+SINON
+    SI (M=59 et S=59) ALORS
+        ÉCRIRE "Dans une seconde, il sera" ,H1, "heure(s) 00 minute(s) et 00 seconde(s)"
+    SINON
+        SI (S=59) ALORS
+            ÉCRIRE "Dans une seconde, il sera" ,H, "heure(s)" ,M1, "minute(s) et 00 seconde(s)"
+        SINON
+            ÉCRIRE "Dans une seconde, il sera" ,H, "heure(s)" ,M, "minute(s) et" ,S1, "seconde(s)"
+        FINSI         
+    FINSI
+FINSI         
+FIN   
+
+
+
+--------------------
+Ex 4.4
+--------------------
+Variable F en Entier
+
+DÉBUT
+
+ÉCRIRE "Veuillez indiquer le nombre de photocopies effetuées"
+LIRE F
+
+F1=F*0.10
+F2=(F-10)*0.09+1
+F3=(F-30)*0.08+2.8                              
+                              
+SI (F<=10) ALORS
+    ÉCRIRE "Votre facture est de" ,F1 ,"E"
+SINON
+    SI (F>10 et F<=30) ALORS
+        ÉCRIRE "Votre facture est de" ,F2 ,"E"
+    SINON
+        ÉCRIRE "Votre facture est de" ,F3 ,"E"   
+    FINSI    
+FINSI
+  
+FIN   
+
+
+--------------------
+Ex 4.5
+--------------------
+Variable C1, C2, C3, C4 en Entier
+
+DÉBUT
+
+ÉCRIRE "Veuillez indiquer votre âge"
+LIRE A
+ÉCRIRE "Veuillez indiquer votre sexe: 1-homme 2-femme"
+LIRE S
+                             
+SI (S=1 et A=>20)Alors
+    ÉCRIRE "Est imposable"
+SINON
+    SI (S=2 et A=>18 et A<=35) Alors
+        ÉCRIRE "Vous est imposable"
+    SINON 
+        ÉCRIRE "Vous n'est pas imposable" 
+    FINSI
+FINSI 
+                             
+FIN   
+
+
+--------------------
+Ex 4.6
+--------------------
+Variable A, S en Entier
+
+DÉBUT
+ÉCRIRE "Veuillez saisir le score en % du 1er candidat"
+LIRE C1
+ÉCRIRE "Veuillez saisir le score en % du 2eme candidat"
+LIRE C2
+ÉCRIRE "Veuillez saisir le score en % du 3eme candidat"
+LIRE C3
+ÉCRIRE "Veuillez saisir le score en % du 4eme candidat"
+LIRE C4
+
+SI (C1>50) ALORS
+      ÉCRIRE "Le candidat 1 élu à la majorité"
+SINON 
+    SI (C2>50) ALORS
+      ÉCRIRE "Le candidat 2 élu à la majorité"
+    SINON
+        SI (C3>50) ALORS
+            ÉCRIRE "Le candidat 3 élu à la majorité"
+            SINON
+                SI (C4>50) ALORS
+                    ÉCRIRE "Le candidat 4 élu à la majorité"
+                FINSI                           
+        FINSI
+    FINSI                         
+FINSI
+
+SI (C1<=50 et C1=>12.5 ET C1>C2 ET C1>C3 ET C1>C4) ALORS
+      ÉCRIRE "Le candidat 1 est qualifié en ballotage favorable pour le 2nd tour"
+SINON
+    SI (C1<=50 et C1=>12.5) ALORS
+        Ecrire "Le candidat 1 est qualifé en ballotage défavorable pour le 2nd tour" 
+    SINON
+        ÉCRIRE "Le candidat 1 n'est pas qualifié pour le 2nd tour" 
+    FINSI
+FINSI
+
+SI (C2<=50 et C2=>12.5) ALORS
+      ÉCRIRE "Le candidat 2 est qualifié pour le 2nd tour"
+SINON
+      ÉCRIRE "Le candidat 2 n'est pas qualifié pour le 2nd tour"
+FINSI
+SI (C3<=50 et C3=>12.5) ALORS
+      ÉCRIRE "Le candidat 3 est qualifié pour le 2nd tour"
+SINON
+     ÉCRIRE "Le candidat 3 n'est pas qualifié pour le 2nd tour"
+FINSI
+SI (C4<=50 et C4=>12.5) ALORS
+      ÉCRIRE "Le candidat 4 est qualifié pour le 2nd tour"
+SINON
+    ÉCRIRE "Le candidat 4 n'est pas qualifié pour le 2nd tour"
+FINSI                           
+   
+FIN   
