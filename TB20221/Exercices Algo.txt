@@ -518,3 +518,108 @@ SINON
 FINSI                           
    
 FIN   
+
+
+
+--------------------
+Ex 4.7
+--------------------
+Variable A, P, R, M  en Entier
+
+DÉBUT
+
+ÉCRIRE "Veuillez indiquer votre âge?"
+LIRE A
+ÉCRIRE "Depuis combien d'années êtes vous titulaire du permis B?"
+LIRE P
+ÉCRIRE "Combien d'accident vous avez dèja été responsable?"
+LIRE R
+ÉCRIRE "Depuis combien d'années vous avez l'assurance?"
+LIRE M
+
+
+SI (A<25 et P<2 et R=0) ou (A<25 et P>2 et R=1) OU (A>25 et P<2 et R=1) ALORS
+    ÉCRIRE "Vous bénificiez de la tarif ROUGE"
+SINON
+    SI (A<25 et P<2 et R=>1) ALORS
+        ÉCRIRE "Vous n'est pas assurer"
+    FINSI        
+FINSI
+
+SI (A<25 et P>2 et R=0) OU (A>25 et P<2 et R=0) ALORS
+    ÉCRIRE "Vous bénificiez de la tarif ORANGE"    
+SINON 
+    SI (A<25 et P>2 et R>1) OU (A>25 et P<2 et R>1)  ALORS
+        ÉCRIRE "Vous n'est pas assurer"  
+    FINSI 
+FINSI
+
+SI (A>25 et P>2 et R=0 et M<=1) ALORS
+    ÉCRIRE "Vous bénificiez de la tarif VERT"    
+SINON 
+    SI (A>25 et P>2 et R>0) ALORS
+        ÉCRIRE "Vous n'est pas assurer"  
+    FINSI 
+FINSI
+
+SI (M>1 et R=0) ALORS
+    ÉCRIRE "Vous bénificiez de la tarif BLUE"
+SINON     
+    SI (M>1 et R>0) ALORS
+        ÉCRIRE "Vous n'est pas assurer"
+    FINSI 
+FINSI
+FIN
+
+
+
+
+--------------------
+Ex 4.8
+--------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
