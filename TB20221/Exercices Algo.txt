@@ -573,7 +573,6 @@ FIN
 
 
 
-
 --------------------
 Ex 4.8
 --------------------
@@ -584,6 +583,118 @@ Ex 4.8
 
 
 
+______________________________________________________________________________________
+
+
+
+--------------------
+Ex 5.1
+--------------------
+VARIABLES
+  N EST_DU_TYPE NOMBRE
+
+DEBUT_ALGORITHME
+
+  AFFICHER "Entrez un nombre entre 1 et 3"
+  LIRE N
+  TANT_QUE (N !=2) FAIRE
+    DEBUT_TANT_QUE
+    LIRE N
+    FIN_TANT_QUE
+  AFFICHER "Correct!"
+
+FIN_ALGORITHME
+
+
+
+--------------------
+Ex 5.2
+--------------------
+VARIABLES
+  N EST_DU_TYPE NOMBRE
+
+DEBUT_ALGORITHME
+
+  AFFICHER* "Entrez un nombre entre 10 et 20 "
+  LIRE N
+  TANT_QUE (N <= 10) FAIRE
+    DEBUT_TANT_QUE
+    AFFICHER* "Plus grand!"
+    LIRE N
+    FIN_TANT_QUE
+  TANT_QUE (N >= 20) FAIRE
+    DEBUT_TANT_QUE
+    AFFICHER* "Plus petit !"
+    LIRE N
+    FIN_TANT_QUE
+  AFFICHER* "Très bien!"
+
+FIN_ALGORITHME
+
+
+
+--------------------
+Ex 5.3
+--------------------
+VARIABLES
+  N EST_DU_TYPE NOMBRE
+  D EST_DU_TYPE NOMBRE
+
+DEBUT_ALGORITHME
+
+  	AFFICHER* "Entrez un nombre entier"
+  	LIRE N
+	D PREND_LA_VALEUR N+10
+	TANT_QUE (N<D) FAIRE
+	DEBUT_TANT_QUE
+		N PREND_LA_VALEUR N + 1
+		AFFICHER N
+	FIN_TANT_QUE
+
+FIN_ALGORITHME
+
+
+
+
+--------------------
+Ex 5.4
+--------------------
+VARIABLES
+  N EST_DU_TYPE NOMBRE
+  A EST_DU_TYPE NOMBRE
+  M EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+  AFFICHER* "Entrez un nombre entuier"
+  LIRE N
+  POUR A ALLANT_DE 0 A 10
+    DEBUT_POUR
+    M PREND_LA_VALEUR N*A
+    AFFICHER* M
+    FIN_POUR
+FIN_ALGORITHME
+
+
+
+--------------------
+Ex 5.5
+--------------------
+VARIABLES
+  N EST_DU_TYPE NOMBRE
+  A EST_DU_TYPE NOMBRE
+  M EST_DU_TYPE NOMBRE
+
+DEBUT_ALGORITHME
+
+  AFFICHER* "Entrez un nombre"
+  LIRE N
+  M PREND_LA_VALEUR 0
+  POUR A ALLANT_DE 1 A N
+    DEBUT_POUR
+    M PREND_LA_VALEUR M+A
+    FIN_POUR
+  AFFICHER M
+
+FIN_ALGORITHME
 
 
 
@@ -594,26 +705,41 @@ Ex 4.8
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+VARIABLES
+J EST_DU_TYPE NOMBRE
+M EST_DU_TYPE NOMBRE
+A EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+	
+	AFFICHER "jour"
+	LIRE J
+	AFFICHER "mois"
+	LIRE M
+	AFFICHER "année"
+	LIRE A
+	
+	SI ((J<=0 ET J>31) OU (M<=0 ET M>12)) ALORS
+		DEBUT_SI
+			AFFICHER "ERROR"
+		FIN_SI
+		SINON
+			DEBUT_SINON
+				AFFICHER "VALIDE"
+			FIN_SINON
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+FIN_ALGORITHME
 
 
 
