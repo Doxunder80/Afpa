@@ -577,10 +577,44 @@ FIN
 Ex 4.8
 --------------------
 
+VARIABLES
+J EST_DU_TYPE NOMBRE
+M EST_DU_TYPE NOMBRE
+A EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+	
+	AFFICHER "jour"
+	LIRE J
+	AFFICHER "mois"
+	LIRE M
+	AFFICHER "année"
+	LIRE A
+	
+	SI ((J<=0 ET J>31) OU (M<=0 ET M>12)) ALORS
+		DEBUT_SI
+			AFFICHER "ERROR"
+		FIN_SI
+		SINON
+			DEBUT_SINON
+				AFFICHER "VALIDE"
+			FIN_SINON
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
-
+	
+	
+FIN_ALGORITHME
 
 
 ______________________________________________________________________________________
@@ -694,51 +728,6 @@ DEBUT_ALGORITHME
     FIN_POUR
   AFFICHER M
 
-FIN_ALGORITHME
-
-
-
-
-
-
-
-
-
-
-VARIABLES
-J EST_DU_TYPE NOMBRE
-M EST_DU_TYPE NOMBRE
-A EST_DU_TYPE NOMBRE
-DEBUT_ALGORITHME
-	
-	AFFICHER "jour"
-	LIRE J
-	AFFICHER "mois"
-	LIRE M
-	AFFICHER "année"
-	LIRE A
-	
-	SI ((J<=0 ET J>31) OU (M<=0 ET M>12)) ALORS
-		DEBUT_SI
-			AFFICHER "ERROR"
-		FIN_SI
-		SINON
-			DEBUT_SINON
-				AFFICHER "VALIDE"
-			FIN_SINON
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 FIN_ALGORITHME
 
 
