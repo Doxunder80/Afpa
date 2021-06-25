@@ -658,7 +658,7 @@ DEBUT_ALGORITHME
     FIN_TANT_QUE
   TANT_QUE (N >= 20) FAIRE
     DEBUT_TANT_QUE
-    AFFICHER* "Plus petit !"
+    AFFICHER* "Plus petit!"
     LIRE N
     FIN_TANT_QUE
   AFFICHER* "Très bien!"
