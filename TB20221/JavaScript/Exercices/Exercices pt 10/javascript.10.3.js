@@ -1,22 +1,18 @@
 // Exercice 3 : Tri d’un tableau //
 
-var Tableau = [74, 58, 2, 65, 21, 42, 35, 15]
+var Tableau = new Array([10, 25, 14, 2, 58, 65, 84, 48, 32, 9]);
 document.write("Tableau initial : " + Tableau + '</br>')
 
-// var Tableau = new Array(10,7,1,6,2,5,4,9,3,8);
-
-for (var i1 = Tableau.length-1; i1 >= 0; i1--) {
-    var temp;
-    for (var i2 = Tableau.length-1; i2 >= 0; i2--) {
-        if (Tableau[i2] < Tableau[i1]) {
-            temp = Tableau[i2];
-            Tableau[i2] = Tableau[i1];
-            Tableau[i1] = temp;
+function triBulle(array) {
+    for (let i = 0; i < array.length -1; i++) 
+{
+    for(let j = 0; j < array.length - 1 - i; j++){
+        if(array[j] > array[j + 1]) {
+            [array[j], array[j + 1]] = [array[j + 1], array[j]]
         }
     }
-    document.write("Tableau après : ")
-    for (var i1 = 0; i1 < Tableau.length;i1++) {   
-        document.write(" | " + Tableau[i1] + " | ")
-    }
 }
-    
+return array
+}
+
+document.write("Tableau après : " + triBulle([10, 25, 14, 2, 58, 65, 84, 48, 32, 9]))
